@@ -60,6 +60,7 @@ b {
   box-sizing: content-box;
 }
 .heading {
+  display: flow-root;
   text-align: center;
   color: #616161;
   margin-top: 64px;
