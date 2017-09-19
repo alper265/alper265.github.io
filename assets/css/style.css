@@ -34,6 +34,9 @@ b {
   color: #9e9e9e;
   background-color: #424242;
 }
+.grid {
+  display: grid;
+}
 .footer-text {
   grid-column: 1 / 1;
   grid-row: 1;
@@ -51,15 +54,15 @@ b {
 .footer-icons a:hover {
   color: #9e9e9e;
 }
-.heading {
-  text-align: center;
-  color: #616161;
-  margin-top: 64px;
-}
 .footer-icons .fa {
   font-size: 32px !important;
   padding: 2px 8px;
   box-sizing: content-box;
+}
+.heading {
+  text-align: center;
+  color: #616161;
+  margin-top: 64px;
 }
 .heading h1 {
   font-size: 4.5rem;
@@ -69,7 +72,4 @@ b {
 .heading p {
   font-size: 1.5rem;
   font-family: monospace;
-}
-.grid {
-  display: grid;
 }
