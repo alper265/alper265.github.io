@@ -9,7 +9,7 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 .content {
- flex: 1;
+  flex: 1;
 }
 *, :after, :before {
   box-sizing: border-box;
