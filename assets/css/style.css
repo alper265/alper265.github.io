@@ -76,9 +76,12 @@ b {
 }
 @media (max-width:839px) {
 
-	.footer {
-		text-align: center;
-	}
+  .heading {
+    margin-top: 32px;
+  }
+  .footer {
+    text-align: center;
+  }
   .footer-text {
     grid-column: 1;
     grid-row: 1;
