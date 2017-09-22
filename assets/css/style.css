@@ -67,7 +67,7 @@ b {
   box-sizing: content-box;
 }
 .heading {
-  display: flow-root;
+  overflow: hidden;
   text-align: center;
   color: #616161;
   margin-top: 64px;
@@ -94,14 +94,21 @@ b {
   .footer {
     text-align: center;
   }
+  .grid {
+    -ms-grid-columns: 100%;
+  }
   .footer-text {
     grid-column: 1;
     grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
   }
   .footer-icons {
     margin-top: 16px;
     grid-column: 1;
     grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
     text-align: center;
   }
 
