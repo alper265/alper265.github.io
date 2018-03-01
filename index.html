@@ -24,15 +24,11 @@
 
 	<style amp-custom>
 	body {
-		margin: 0;
-		padding: 0;
-		border: 0;
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 		background: #fafafa;
 		font-family: 'Oswald', sans-serif;
-		font-size: 16px;
 	}
 	.site-content {
 		flex: 1;
@@ -60,20 +56,14 @@
 	}
 	.grid {
 		display: grid;
-		display: -ms-grid;
-		-ms-grid-columns: 66% 34%;
 	}
 	.footer-text {
 		grid-column: 1 / 1;
 		grid-row: 1;
-		-ms-grid-column: 1;
-		-ms-grid-row: 1;
 	}
 	.footer-icons {
 		grid-column: 2 / 3;
 		grid-row: 1;
-		-ms-grid-column: 2;
-		-ms-grid-row: 1;
 		text-align: right;
 		height: auto;
 	}
@@ -118,21 +108,14 @@
 		.footer {
 			text-align: center;
 		}
-		.grid {
-			-ms-grid-columns: 100%;
-		}
 		.footer-text {
 			grid-column: 1;
 			grid-row: 1;
-			-ms-grid-column: 1;
-			-ms-grid-row: 1;
 		}
 		.footer-icons {
 			margin-top: 8px;
 			grid-column: 1;
 			grid-row: 2;
-			-ms-grid-column: 1;
-			-ms-grid-row: 2;
 			text-align: center;
 		}
 	}
