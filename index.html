@@ -11,14 +11,15 @@
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/assets/img/favicon/manifest.json">
-	<link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#9e9e9e">
-	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
-	<meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
-	<meta name="theme-color" content="#616161">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#159957">
+	<meta name="apple-mobile-web-app-title" content="Alper">
+	<meta name="application-name" content="Alper">
+	<meta name="msapplication-TileColor" content="#159957">
+	<meta name="theme-color" content="#ffffff">
 
 	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -27,7 +28,8 @@
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
-		background: #fafafa;
+		background-color: #155799;
+		background-image: linear-gradient(120deg, #155799, #159957);
 		font-family: 'Oswald', sans-serif;
 	}
 	.site-content {
@@ -42,41 +44,34 @@
 	.footer-content,
 	.page-content {
 		max-width: 1000px;
-		padding: 0 16px;
+		padding: 0 1rem;
 		margin: 0 auto;
 	}
 	.footer-content {
-		padding: 32px 16px;
+		padding: 1.5rem 1rem;
 	}
 	.footer {
 		display: block;
-		margin-top: 64px;
-		color: #9e9e9e;
-		background-color: #424242;
+		margin-top: 3.5rem;
+		color: #d9d9d9;
+		background-color: rgba(0,0,0,.5);
 	}
 	.grid {
 		display: grid;
-	}
-	.footer-text {
-		grid-column: 1 / 1;
-		grid-row: 1;
-	}
-	.footer-icons {
-		grid-column: 2 / 3;
-		grid-row: 1;
-		text-align: right;
-		height: auto;
+		align-items: center;
+		grid-template-columns: [a] auto [b] auto;
+		grid-column-gap: 1rem;
 	}
 	.footer-icons a {
 		color: #f5f5f5;
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
+		float: right;
+		height: 3.5rem;
 	}
 	.footer-icons svg {
-		color: #f5f5f5;
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		padding: 0 10px;
-		height: 32px;
-		margin: 12px 0;
+		padding: 0.75rem;
+		height: 2rem;
+		box-sizing: content-box;
 	}
 	.footer-icons a:hover {
 		opacity: 0.5;
@@ -84,13 +79,13 @@
 	.heading {
 		overflow: hidden;
 		text-align: center;
-		color: #616161;
-		margin-top: 64px;
+		color: white;
+		margin-top: 4rem;
 		font-family: monospace;
 	}
 	.heading h1 {
 		font-size: 4rem;
-		text-shadow: 3px 2px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
+		text-shadow: 7px 6px 0px rgba(0,0,0,.2);
 	}
 	.heading p {
 		font-size: 1.35rem;
@@ -104,19 +99,6 @@
 		}
 		.heading p {
 			font-size: 1.25rem;
-		}
-		.footer {
-			text-align: center;
-		}
-		.footer-text {
-			grid-column: 1;
-			grid-row: 1;
-		}
-		.footer-icons {
-			margin-top: 8px;
-			grid-column: 1;
-			grid-row: 2;
-			text-align: center;
 		}
 	}
 	</style>
