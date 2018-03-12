@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<script async src="https://cdn.ampproject.org/v0.js"></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-	<link rel="canonical" href="index.html">
 
 	<title>Home | Alper Yilmaz.</title>
 
@@ -21,16 +19,31 @@
 	<meta name="msapplication-TileColor" content="#159957">
 	<meta name="theme-color" content="#ffffff">
 
-	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-	<style amp-custom>
+	<style>
 	body {
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 		background-color: #155799;
-		background-image: linear-gradient(120deg, #155799, #159957);
 		font-family: 'Oswald', sans-serif;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		color: #fff;
+		background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+		background-size: 400% 400%;
+		animation: Gradient 15s ease infinite;
+	}
+	@keyframes Gradient {
+		0% {
+			background-position: 0% 50%
+		}
+		50% {
+			background-position: 100% 50%
+		}
+		100% {
+			background-position: 0% 50%
+		}
 	}
 	.site-content {
 		flex: 1;
