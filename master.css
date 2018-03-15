@@ -1,0 +1,103 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  height: 100vh;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400%;
+  animation: Gradient 15s ease infinite;
+  color: white;
+}
+.heading {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0 1rem 9rem;
+  text-align: center;
+  animation: fadein 1s;
+}
+.heading h1 {
+  font-size: 4rem;
+  text-shadow: 7px 6px 0px rgba(0,0,0,.2);
+  margin: .5rem 0;
+}
+.heading p {
+  font-size: 1.5rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.footer-content {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: [a] auto [b] auto;
+  grid-column-gap: 1rem;
+  animation: fadeUp 1s;
+}
+.footer-icons a {
+  transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
+  color: white;
+  float: right;
+}
+.footer-icons a:hover {
+  opacity: 0.5;
+}
+.footer-icons svg {
+  padding: 0.75rem;
+  height: 2rem;
+  box-sizing: content-box;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes fadeUp {
+    from {
+        opacity:0;
+        padding-bottom: .75rem;
+    }
+    to {
+        opacity:1;
+    }
+}
+@media (max-width:768px) {
+  .footer-content {
+    padding: 1rem;
+  }
+  .heading h1 {
+    font-size: 3.625rem;
+  }
+  .heading p {
+    font-size: 1.25rem;
+  }
+}
